@@ -1,0 +1,19 @@
+username = "Mason"
+password = "Mut"
+incorrect_user = 5
+print("Welcome")
+while incorrect_user > 0:
+  userinput = input("What's your username: ")
+  userpassword = input("What's your password: ")
+  if userinput == username and userpassword == password:
+    print("Game loading...")
+  else:
+    print("Incorrect username or password")
+    incorrect_user -= 1
+    
+  if incorrect_user == 0:
+    print("You have been locked out of your account")
+
+    break
+    
+  
